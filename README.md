@@ -2,7 +2,7 @@
 
 | Bintray | Windows | Linux |
 |:--------:|:---------:|:-----------------:|
-|[![Download](https://api.bintray.com/packages/mjvk/public-conan/b2sum_installer%3Amjvk/images/download.svg) ](https://bintray.com/mjvk/public-conan/b2sum_installer%3Amjvk/_latestVersion)|[![Build status](https://ci.appveyor.com/api/projects/status/h3736hkvki58n8dc?svg=true)](https://ci.appveyor.com/project/mjvk/conan-b2sum-installer)|[![Build Status](https://travis-ci.com/mjvk/conan-b2sum_installer.svg?branch=master)](https://travis-ci.com/mjvk/conan-b2sum_installer)
+|[![Download](https://api.bintray.com/packages/mjvk/public-conan/gcovr_installer%3Amjvk/images/download.svg) ](https://bintray.com/mjvk/public-conan/gcovr_installer%3Amjvk/_latestVersion)|[![Build status](https://ci.appveyor.com/api/projects/status/fq82b58mnpnfk13k?svg=true)](https://ci.appveyor.com/project/mjvk/conan-gcovr-installer)|[![Build Status](https://travis-ci.com/mjvk/conan-gcovr_installer.svg?branch=master)](https://travis-ci.com/mjvk/conan-gcovr_installer)
 
 ## Conan.io Information
 

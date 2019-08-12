@@ -1,4 +1,4 @@
-from conans import ConanFile, AutoToolsBuildEnvironment
+from conans import ConanFile
 from conans import tools
 import PyInstaller.__main__
 import os
