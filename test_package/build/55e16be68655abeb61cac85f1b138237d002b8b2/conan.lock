@@ -1,0 +1,31 @@
+{
+ "profile": "[settings]\narch=x86_64\narch_build=x86_64\ncompiler=qcc\ncompiler.libcxx=cxx\ncompiler.version=5.4\nos=Neutrino\nos.version=7.0\nos_build=Windows\n[options]\n[build_requires]\n*: neutrino_toolchain_installer/0.1@mjvk/testing\n[env]\n",
+ "graph_lock": {
+  "nodes": {
+   "d7a81775-bc1b-11e9-8c35-a4c3f04a311a": {
+    "pref": "gcovr_installer/4.1@mjvk/testing#c7f20bd67c08f2bf2e43aeeb338e0157:456f15897172eef340fcbac8a70811f2beb26a93#30c716e155c3a636384e62c7fd861e79",
+    "options": "",
+    "requires": {
+     "neutrino_toolchain_installer/0.1@mjvk/testing": "d7a81774-bc1b-11e9-83b5-a4c3f04a311a"
+    }
+   },
+   "d7a81776-bc1b-11e9-8c3d-a4c3f04a311a": {
+    "pref": "neutrino_toolchain_installer/0.1@mjvk/testing#29831fd7b9951310f48cb95933e19095:7db8e31913cb249c780428805485e962facb0366#c33a0fa02858aae95e87cfe92274b16d",
+    "options": "bsp=True\ngenerate_toolchain=True\nhosttools=True\nsysroot=True\nvmimages=False"
+   },
+   "d7a81777-bc1b-11e9-a497-a4c3f04a311a": {
+    "pref": "None/None@mjvk/testing:90f9bc846b893beb946c556591ae0695b82c87a2",
+    "options": "",
+    "requires": {
+     "gcovr_installer/4.1@mjvk/testing#c7f20bd67c08f2bf2e43aeeb338e0157": "d7a81775-bc1b-11e9-8c35-a4c3f04a311a",
+     "neutrino_toolchain_installer/0.1@mjvk/testing": "d7a81776-bc1b-11e9-8c3d-a4c3f04a311a"
+    }
+   },
+   "d7a81774-bc1b-11e9-83b5-a4c3f04a311a": {
+    "pref": "neutrino_toolchain_installer/0.1@mjvk/testing#29831fd7b9951310f48cb95933e19095:7db8e31913cb249c780428805485e962facb0366#c33a0fa02858aae95e87cfe92274b16d",
+    "options": "bsp=True\ngenerate_toolchain=True\nhosttools=True\nsysroot=True\nvmimages=False"
+   }
+  }
+ },
+ "version": "0.1"
+}

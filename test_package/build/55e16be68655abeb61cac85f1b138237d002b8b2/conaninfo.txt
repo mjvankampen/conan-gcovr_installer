@@ -1,0 +1,33 @@
+[settings]
+    arch=x86_64
+    compiler=qcc
+    compiler.libcxx=cxx
+    compiler.version=5.4
+    os=Neutrino
+    os.version=7.0
+
+[requires]
+    gcovr_installer/4.Y.Z
+
+[options]
+
+
+[full_settings]
+    arch=x86_64
+    compiler=qcc
+    compiler.libcxx=cxx
+    compiler.version=5.4
+    os=Neutrino
+    os.version=7.0
+
+[full_requires]
+    gcovr_installer/4.1@mjvk/testing:456f15897172eef340fcbac8a70811f2beb26a93
+
+[full_options]
+
+
+[recipe_hash]
+
+
+[env]
+
