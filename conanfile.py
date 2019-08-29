@@ -1,6 +1,6 @@
 from conans import ConanFile
 from conans import tools
-import PyInstaller.__main__
+import subprocess
 import os
 import codecs
 
@@ -34,19 +34,10 @@ class GcovrConan(ConanFile):
         
     def build(self):
         import pip
-        if hasattr(pip, "main"):
-            pip.main(["install","lxml"])
-        else:
-            from pip._internal import main
-            main(["install", "PyInstaller","lxml"])
+        subprocess.call("pip install pyinstaller lxml", shell=True)
         mainfilename = os.path.join(self._source_subfolder,"gcovr","__main__.py")
         self._makeAbsoluteImport(mainfilename)
-        PyInstaller.__main__.run([  '--name=%s' % "gcovr", 
-                                    '--onefile', \
-                                    '--workpath', os.path.join(self.build_folder,"build"),\
-                                    '--distpath', os.path.join(self.build_folder,"bin"),\
-                                    '--specpath', self.build_folder,\
-                                    mainfilename])
+        subprocess.call('pyinstaller %s --onefile --workpath %s --distpath %s --specpath %s' % (mainfilename, os.path.join(self.build_folder,"build"), os.path.join(self.build_folder,"bin"), self.build_folder), shell=True)
 
     def package(self):
         self.copy("*gcovr", dst="bin", src="bin", keep_path=False)
