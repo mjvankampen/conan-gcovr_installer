@@ -33,11 +33,10 @@ class GcovrConan(ConanFile):
         os.rename("gcovr-%s" % self.version, self._source_subfolder)
         
     def build(self):
-        import pip
         subprocess.call("pip install pyinstaller lxml", shell=True)
         mainfilename = os.path.join(self._source_subfolder,"gcovr","__main__.py")
         self._makeAbsoluteImport(mainfilename)
-        subprocess.call('pyinstaller %s --onefile --workpath %s --distpath %s --specpath %s' % (mainfilename, os.path.join(self.build_folder,"build"), os.path.join(self.build_folder,"bin"), self.build_folder), shell=True)
+        subprocess.call('pyinstaller %s --name gcovr --onefile --workpath %s --distpath %s --specpath %s' % (mainfilename, os.path.join(self.build_folder,"build"), os.path.join(self.build_folder,"bin"), self.build_folder), shell=True)
 
     def package(self):
         self.copy("*gcovr", dst="bin", src="bin", keep_path=False)
