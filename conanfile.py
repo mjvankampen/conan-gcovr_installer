@@ -6,8 +6,8 @@ import codecs
 
 class GcovrConan(ConanFile):
     name = "gcovr_installer"
-    version = "4.1"
-    url = "https://github.com/bincrafters/conan-protoc_installer"
+    version = "4.2"
+    url = "https://github.com/mjvk/conan-gcovr_installer"
     homepage = "http://gcovr.com"
     gitpage = "https://github.com/gcovr/gcovr"
     topics = ("gcovr", "gcov reporting", "coverage")
