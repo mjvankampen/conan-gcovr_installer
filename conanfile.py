@@ -6,7 +6,7 @@ import codecs
 
 class GcovrConan(ConanFile):
     name = "gcovr_installer"
-    version = "4.2"
+    version = "5.0"
     url = "https://github.com/mjvk/conan-gcovr_installer"
     homepage = "http://gcovr.com"
     gitpage = "https://github.com/gcovr/gcovr"
